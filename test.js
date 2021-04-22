@@ -13,7 +13,11 @@ class Test extends HTMLElement {
 
         this._root.innerHTML = `
         <style>
-            
+      
+          .x{
+            filter: grayscale(1);
+            filter:invert(100%);
+          }
             .frame {
                 margin: 5px;
                 padding:5px;
@@ -50,10 +54,11 @@ class Test extends HTMLElement {
                 margin-left: -291px;
                 padding: 20px 15px 0px 15px;
                 border-radius: 5px;
+                box-shadow: 2px 2px 5px rgb(0 0 0 / 35%);
               }
               .xButton{
-                top: -10px;
-                left: 100%;
+                top: 10px;
+                right: 10px;
                 width: 15px;
                 height: 15px;
                 border-width: 0px;
@@ -175,7 +180,7 @@ class Test extends HTMLElement {
             popup.id = "popup" + frigo.id;
 
             let myImg = document.createElement("img");
-            myImg.className = "xButton";
+            myImg.className = "xButton x";
             myImg.id = "xButton";
             myImg.src = "https://image.flaticon.com/icons/png/512/458/458595.png";
 
@@ -212,7 +217,7 @@ class Test extends HTMLElement {
 
                 //create x symbol
                 let xButton = document.createElement("center");
-                xButton.className = "verticalhorizontal";
+                xButton.className = "verticalhorizontal x";
                 xButton.id = "x" + frigo.id + x;
                 let myImg = document.createElement("img");
                 myImg.src = "https://image.flaticon.com/icons/png/512/458/458595.png";
