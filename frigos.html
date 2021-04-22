@@ -80,7 +80,7 @@
     <img src="https://image.flaticon.com/icons/png/512/458/458595.png" alt="" id="xButton2" class="xButton" onclick="fermerPopup('popupReparation')"">
     <div class="container-fluid" id="UneEntrepriseFamiliale">
       <div class="container">
-        <p>Service de réparation</p>
+        <p class="titre">Rapporter un frigo défectueux</p>
         <div class="row ID friogo">
           <label class="col-sm-6" for="frigo">ID du frigo défectueux </label>
           <div class="col-sm-6">
@@ -91,7 +91,7 @@
           
         </div>
         <div class="row fonction affecté">
-          <div class="col-sm-6">Fonction affecté</div>
+          <div class="col-sm-6">Fonction affectée</div>
           <div class="col-sm-6">
             <select name="FonctionAffecte" id="FonctionAffecte">
        
@@ -106,19 +106,19 @@
         </select></div>
         </div>
         <div class="row severité">
-          <div class="col-sm-6">Sévérité</div>
+          <div class="col-sm-6">Niveau de sévérité</div>
 
           <div class="col-sm-2">
             <input type="radio" id="faible" name="severité" value="faible">
-            <label for="faible">Faible</label><br>
+            <label for="faible" style="color:darkgreen;">Faible</label><br>
           </div>
           <div class="col-sm-2">
-            <input type="radio" id="modere" name="severité" value="modere">
-            <label for="modere">Modere</label><br>
+            <input type="radio" id="modere" name="severité" value="modere" >
+            <label for="modere" style="color:rgb(165, 110, 6);">Modéré</label><br>
           </div>
           <div class="col-sm-2">
             <input type="radio" id="critique" name="severité" value="critique">
-            <label for="critique">Critique</label><br>
+            <label for="critique" style="color:red;">Critique</label><br>
           </div>
         </div>
         <div class="commentaire">Commentaire</div>
